@@ -3,12 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AdminEditPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
