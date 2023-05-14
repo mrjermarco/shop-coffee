@@ -1,0 +1,56 @@
+#container {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 80vh 10vh;
+
+  grid-template-areas:
+
+  "hd"
+  "reg"
+  "ft"
+    ;
+
+}
+
+#header {
+
+  grid-area: hd;
+  background-color: brown;
+  max-width: 100%;
+  }
+
+.register-box {
+
+  border: 1px solid black;
+  width: 300px;
+  margin: 50px;
+  text-align: center;
+
+}
+
+#box {
+  grid-area: reg;
+  margin: auto;
+}
+
+#btnStyle {
+
+  margin:10px;
+
+}
+
+#loginText {
+
+  color:red;
+
+}
+
+#footer {
+
+  grid: ft;
+  background-color: brown;
+
+}
