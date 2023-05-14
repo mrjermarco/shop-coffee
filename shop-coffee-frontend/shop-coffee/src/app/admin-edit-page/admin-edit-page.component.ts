@@ -9,7 +9,6 @@ export class AdminEditPageComponent implements OnInit {
 
   menuList = ['Menu', 'Coffee', 'Tea', 'Pastry'];
 
-  numbers = ['1', '2', '3'];
   constructor() { }
 
   ngOnInit(): void {

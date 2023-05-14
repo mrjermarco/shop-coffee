@@ -3,15 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminEditPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
