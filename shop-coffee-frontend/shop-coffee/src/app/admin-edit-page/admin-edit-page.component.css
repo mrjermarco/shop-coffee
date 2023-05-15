@@ -4,8 +4,8 @@
 
 img {
     padding: 20px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,12 +18,19 @@ img {
   }
   
   h2 {
-    margin-left: 45%;
+    margin-left: 40%;
     margin-right: 20px;
   }
   button {
     float: right;
+    padding: 10px 15px;
     background-color: rgb(232, 6, 6);
+    border-radius: 4px;
+    transition-duration: 0.4s;
+  }
+
+  button:hover {
+    background-color: rgb(165, 1, 1);
   }
 
   .box1 {
@@ -39,10 +46,39 @@ img {
     font-weight: bold;
     color:teal;
     text-align: center;
+    margin-top: 20%;
   }
   
   .box1 p {
     font-size: 40px;
     line-height: 1.5;
     margin: 0;
+  }
+
+  table {
+    padding: 20px;
+    width: 650px;
+    height: 300px;
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  td {
+    border: 1px solid black;
+    max-width: fit-content;
+  }
+
+  .save{
+    background-color:#0696ef;
+    padding: 12px 28px;
+    font-size: 20px;
+    color: white;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+  }
+
+  .save:hover {
+    background-color:#016eb2;
   }
