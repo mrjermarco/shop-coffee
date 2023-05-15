@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
+import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminEditPageComponent
+    AdminEditPageComponent,
+    UserLoginPageComponent
   ],
   imports: [
     BrowserModule,
