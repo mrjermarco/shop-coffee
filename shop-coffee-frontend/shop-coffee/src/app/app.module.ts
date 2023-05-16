@@ -17,15 +17,21 @@ import { MatTableModule } from '@angular/material/table';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomePageComponent } from './home-page/home-page.component';
+import { UserHomepageComponent } from './pages/user-homepage/user-homepage.component';
+import { OrderItemSpecificsComponent } from './pages/order-item-specifics/order-item-specifics.component';
+import { HomePageComponent } from './home-page/home-page.component'; 
 const routes: Routes = [
+  { path: 'user-homepage', component: UserHomepageComponent },
+  { path: 'order-item-specifics', component:OrderItemSpecificsComponent },
   { path: 'home-page', component: HomePageComponent}
 ]
+
 @NgModule({
   declarations: [
     AppComponent,
+    UserHomepageComponent,
+    OrderItemSpecificsComponent,
     HomePageComponent,
-   
   ],
   imports: [
     RouterModule.forRoot(routes),
