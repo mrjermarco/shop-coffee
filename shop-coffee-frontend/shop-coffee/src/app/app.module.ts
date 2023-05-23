@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
+import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
+import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CreateCoffeeComponent } from './create-coffee/create-coffee.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -20,23 +25,33 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserHomepageComponent } from './pages/user-homepage/user-homepage.component';
 import { OrderItemSpecificsComponent } from './pages/order-item-specifics/order-item-specifics.component';
-
+import { HomePageComponent } from './home-page/home-page.component';
 const routes: Routes = [
   { path: 'user-homepage', component: UserHomepageComponent },
   { path: 'order-item-specifics', component:OrderItemSpecificsComponent },
-
+  { path: 'home-page', component: HomePageComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
+
+    AdminEditPageComponent,
+    UserLoginPageComponent,
+    CreateCoffeeComponent,
+
     UserHomepageComponent,
     OrderItemSpecificsComponent,
+    HomePageComponent,
+
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
