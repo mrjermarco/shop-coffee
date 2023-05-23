@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
 import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { CreateCoffeeComponent } from './create-coffee/create-coffee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminEditPageComponent,
-    UserLoginPageComponent
+    UserLoginPageComponent,
+    CreateCoffeeComponent,
   ],
   imports: [
     BrowserModule,
