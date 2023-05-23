@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
 import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
 import { CreateCoffeeComponent } from './create-coffee/create-coffee.component';
+import { UserHomepageComponent } from './pages/user-homepage/user-homepage.component';
+import { OrderItemSpecificsComponent } from './pages/order-item-specifics/order-item-specifics.component';
 
 const routes: Routes = [
   { path: 'admin-edit', component: AdminEditPageComponent },
   { path: 'user-login', component: UserLoginPageComponent},
-  { path: 'create-coffee', component: CreateCoffeeComponent}
+  { path: 'create-coffee', component: CreateCoffeeComponent},
+  { path: 'user-homepage', component: UserHomepageComponent},
+  { path: 'order-item-specifics', component: OrderItemSpecificsComponent}
+
 ];
 
 @NgModule({
