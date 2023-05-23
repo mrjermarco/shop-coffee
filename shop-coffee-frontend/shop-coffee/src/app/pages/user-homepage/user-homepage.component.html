@@ -15,8 +15,10 @@
     </div>
   </header>
   <section class="gallery">
-    <div class="item-1">
+    <div class="item-1"(click)="gotoOrderItem()">
+      <a routerLink="order-item-specifics" class="item-1" routerLinkActive="active">
       <img src="\assets\images\Cappuccino.jpg" alt="item 1">
+    </a>
       <div class="itemtext1">item 1
         <label>
           <input type="checkbox" name="item-1-checkbox">
