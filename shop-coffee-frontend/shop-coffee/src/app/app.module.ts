@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { AdminEditPageComponent } from './admin-edit-page/admin-edit-page.component';
+import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CreateCoffeeComponent } from './create-coffee/create-coffee.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -29,14 +35,23 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+
+    AdminEditPageComponent,
+    UserLoginPageComponent,
+    CreateCoffeeComponent,
+
     UserHomepageComponent,
     OrderItemSpecificsComponent,
     HomePageComponent,
+
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
@@ -51,6 +66,7 @@ const routes: Routes = [
     MatBadgeModule,
     MatSnackBarModule,
     BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
