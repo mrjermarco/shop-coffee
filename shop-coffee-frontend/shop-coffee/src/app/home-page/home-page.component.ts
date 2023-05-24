@@ -17,4 +17,7 @@ export class HomePageComponent implements OnInit {
   gotoOrderItem() {
     this.router.navigate(['/order-item-specifics']);
   }
+  gotoUserLogin() {
+    this.router.navigate(['/user-login']);
+  }
 }
