@@ -12,51 +12,86 @@
 
     <form>
 
-      <label for="firstName"></label><br>
-      <input type="text" id="firstNameField" name="firstName" placeholder="First Name">
+      <div class ="row">
+        <div class = "col">
+          <label for="firstName"></label><br>
+          <input type="text" id="firstNameField" name="firstName" placeholder="First Name">
+        </div>
 
-      <label for="lastName"></label><br>
-      <input type="text" id="lastNameField" name="lastName" placeholder="Last Name"><br><br>
+        <div class = "col">
+          <label for="lastName"></label><br>
+          <input type="text" id="lastNameField" name="lastName" placeholder="Last Name"><br><br>
+        </div>
+      </div>
 
-      <label for="billing"></label><br>
-      <input type="text" id="billingField" name="billing" placeholder="Billing Address"><br><br>
+      <div class = "row">
+        <label for="billing"></label><br>
+        <input type="text" id="billingField" name="billing" placeholder="Billing Address"><br><br>
+      </div>
 
-      <label for="city"></label><br>
-      <input type="text" id="cityField" name="city" placeholder="City">
+      <div class = "row">
+        <div class = "col">
+          <label for="city"></label><br>
+          <input type="text" id="cityField" name="city" placeholder="City">
+        </div>
 
-      <label for="state"></label><br>
-      <input type="text" id="stateField" name="state" placeholder="State"><br><br>
+        <div class = "col">
+          <label for="state"></label><br>
+          <input type="text" id="stateField" name="state" placeholder="State"><br><br>
+        </div>
+      </div>
 
-      <label for="zipCode"></label><br>
-      <input type="text" id="zipCodeField" name="zipCode" placeholder="Zip Code">
+      <div class = "row">
+        <div class = "col">
+          <label for="zipCode"></label><br>
+          <input type="text" id="zipCodeField" name="zipCode" placeholder="Zip Code">
+        </div>
 
-      <label for="phoneNumber"></label><br>
-      <input type="text" id="phoneNumberField" name="phoneNumber" placeholder="Phone Number"><br><br>
+        <div class = "col">
+          <label for="phoneNumber"></label><br>
+          <input type="tel" id="phoneNumberField" name="phoneNumber" placeholder="Phone Number"><br><br>
+        </div>
+    </div>
 
-      <label for="email"></label><br>
-      <input type="text" id="emailField" name="email" placeholder="Email">
+    <div class ="row">
 
-      <label for="orderNotes"></label><br>
-      <input type="text" id="orderNotesField" name="orderNotes" placeholder="Order Notes"><br><br>
+      <div class = "col">
+        <label for="email"></label><br>
+        <input type="email" id="emailField" name="email" placeholder="Email">
+      </div>
 
+      <div class = "col">
+        <label for="orderNotes"></label><br>
+        <input type="text" id="orderNotesField" name="orderNotes" placeholder="Order Notes"><br><br>
+      </div>
+
+    </div>
+
+      <div class = "row">
       <label for="cardNumber"></label><br>
-      <input type="text" id="cardNumberField" name="cardNumber" placeholder="Card Number"><br><br>
+      <input type="text" id="cardNumberField" inputMode= "numeric" name="cardNumber" maxLength= "16" placeholder="Card Number"><br><br>
+      </div>
 
-      <label for="expDate"></label><br>
-      <input type="text" id="expDateField" name="expDate" placeholder="Expiration Date">
+      <div class = "row">
+        <div class = "col">
+          <label for="expDate"></label><br>
+          <input type="text" id="expDateField" name="expDate" placeholder="Expiration Date">
+        </div>
 
-      <label for="cvc"></label><br>
-      <input type="text" id="cvcField" name="cvc" placeholder="CVC"><br><br>
+        <div class = "col">
+          <label for="cvc"></label><br>
+          <input type="text" id="cvcField" name="cvc" placeholder="CVC"><br><br>
+        </div>
+      </div>
 
-      <button type="submit">Pay Now</button>
+      <button id = "btnStyle" type="submit">Pay Now</button>
 
     </form>
 
-    <img src="/shop-coffee-frontend/shop-coffee/src/assets/images/DJC Logo 3.png" alt="Coffee Shop Logo">
-
   </div>
 
-
-
+  <div id = "logo-style">
+  <img src="/shop-coffee-frontend/shop-coffee/src/assets/images/DJC Logo 3.png" alt="Coffee Shop Logo">
+  </div>
 
 </body>

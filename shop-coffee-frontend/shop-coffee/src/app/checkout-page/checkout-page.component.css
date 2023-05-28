@@ -1,66 +1,75 @@
 #container {
   display: grid;
-  width: 100%;
+  max-width: 100%;
   margin: auto;
-  justify-content: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, min-max(450px, 1fr));
   grid-template-rows: 5vh 20vh 75vh;
 
   grid-template-areas:
 
-  "hd"
-  "sum"
-  "form"
+  "hd hd"
+  "sum sum"
+  "form form"
     ;
 
 }
 
 #header {
-  grid-area: "hd"
+  grid-area: "hd";
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 #chkoutSummary {
   grid-area: "sum";
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
   border: 1px solid black;
-  width: 50%;
+  max-width: 30%;
 }
 
 #chkoutForm {
+  grid-area: "form";
   display: table;
-  justify-content: space-between;
-  justify-content: center;
+  table-layout: auto;
+  padding: 5px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
   border: 1px solid black;
-  max-width: 60%;
-  grid-area: "form"
+  max-width: 40%;
 }
 
-#lastNameField {
-  float: right;
-}
 
 #billingField {
-  width: 95%;
-}
-
-#stateField {
-  float: right;
-}
-
-#phoneNumberField {
-  float: right;
+  max-width: 95%;
+  margin: auto;
 }
 
 #orderNotesField {
-  float: right;
   height: 40px;
 }
 
 #cardNumberField {
-  width: 95%;
+  max-width: 95%;
+  margin: auto;
 }
 
-#cvcField {
-  float: right;
+#logo-style {
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
-
+#btnStyle {
+  text-transform: uppercase;
+  padding: 3px;
+  &:hover {
+    background-color: green;
+  }
+}
