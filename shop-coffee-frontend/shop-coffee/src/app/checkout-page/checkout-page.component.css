@@ -1,0 +1,66 @@
+#container {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vh 20vh 75vh;
+
+  grid-template-areas:
+
+  "hd"
+  "sum"
+  "form"
+    ;
+
+}
+
+#header {
+  grid-area: "hd"
+}
+
+#chkoutSummary {
+  grid-area: "sum";
+  border: 1px solid black;
+  width: 50%;
+}
+
+#chkoutForm {
+  display: table;
+  justify-content: space-between;
+  justify-content: center;
+  border: 1px solid black;
+  max-width: 60%;
+  grid-area: "form"
+}
+
+#lastNameField {
+  float: right;
+}
+
+#billingField {
+  width: 95%;
+}
+
+#stateField {
+  float: right;
+}
+
+#phoneNumberField {
+  float: right;
+}
+
+#orderNotesField {
+  float: right;
+  height: 40px;
+}
+
+#cardNumberField {
+  width: 95%;
+}
+
+#cvcField {
+  float: right;
+}
+
+

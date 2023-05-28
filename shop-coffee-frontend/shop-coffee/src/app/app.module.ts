@@ -26,10 +26,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserHomepageComponent } from './pages/user-homepage/user-homepage.component';
 import { OrderItemSpecificsComponent } from './pages/order-item-specifics/order-item-specifics.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 const routes: Routes = [
   { path: 'user-homepage', component: UserHomepageComponent },
   { path: 'order-item-specifics', component:OrderItemSpecificsComponent },
-  { path: 'home-page', component: HomePageComponent}
+  { path: 'home-page', component: HomePageComponent},
+  { path: 'checkout', component: CheckoutPageComponent}
 ]
 
 @NgModule({
@@ -43,6 +45,7 @@ const routes: Routes = [
     UserHomepageComponent,
     OrderItemSpecificsComponent,
     HomePageComponent,
+    CheckoutPageComponent,
 
   ],
   imports: [
