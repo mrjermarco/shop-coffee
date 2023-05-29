@@ -31,7 +31,8 @@ const routes: Routes = [
   { path: 'user-homepage', component: UserHomepageComponent },
   { path: 'order-item-specifics', component:OrderItemSpecificsComponent },
   { path: 'home-page', component: HomePageComponent},
-  { path: 'checkout', component: CheckoutPageComponent}
+  { path: 'checkout', component: CheckoutPageComponent},
+  { path: '**', component: HomePageComponent}
 ]
 
 @NgModule({
