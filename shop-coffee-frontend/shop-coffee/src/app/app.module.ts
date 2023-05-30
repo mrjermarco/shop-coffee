@@ -27,6 +27,8 @@ import { UserHomepageComponent } from './pages/user-homepage/user-homepage.compo
 import { OrderItemSpecificsComponent } from './pages/order-item-specifics/order-item-specifics.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
+import { OrderCompleteComponent } from './order-complete/order-complete.component';
+
 const routes: Routes = [
   { path: 'user-homepage', component: UserHomepageComponent },
   { path: 'order-item-specifics', component:OrderItemSpecificsComponent },
@@ -47,6 +49,7 @@ const routes: Routes = [
     OrderItemSpecificsComponent,
     HomePageComponent,
     CheckoutPageComponent,
+    OrderCompleteComponent,
 
   ],
   imports: [

@@ -40,6 +40,11 @@ img {
     width: 80px;
 }
 
+.coffee-cup{
+    /* padding: 8%; */
+    margin-bottom: 100px;
+}
+
 .coffee-cup img{
     float:left;
     margin-left: 30px;
@@ -53,12 +58,55 @@ img {
     padding-top: 30px;
 }
 
-.customization p {
-    margin-top: 100px;
-    margin-left: 30px;
+
+.row{
+   display: flex; 
 }
 
-.customization select {
-    margin-left: 30px;
+.column {
+    flex: 50%;
+    text-align: left;
+    margin-left: 20px;
 }
+
+.column label{
+    margin-bottom: 10%;
+}
+
+.column select{
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+.small img {
+    display: block;
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+.small p{
+    display: block;
+    float: left;
+    margin-top: 40px;
+}
+
+.medium img{
+    display: block;
+    margin-top: 150px;
+    margin-left: 0;
+    height: 100px;
+    width: 100px;
+}
+
+.large img{
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    height: 120px;
+    width: 120px;
+}
+
+
+
 
